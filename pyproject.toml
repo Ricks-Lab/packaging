@@ -32,7 +32,7 @@ dependencies = [
 ]
 
 [project.scripts]
-sync-version = "sync_version:main"
+sync-version = "tools.sync_version:main"
 
 [build-system]
 requires = ["setuptools>=61", "wheel", "tomli", "build"]
