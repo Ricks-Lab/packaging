@@ -1,0 +1,47 @@
+[project]
+name = "rickslab-sync-version"
+version = "0.1.0"
+description = "Ricks-Lab Build Utilities"
+readme = {file = "README.md", content-type = "text/markdown"}
+requires-python = ">=3.8"
+authors = [
+    {name = "Rick Langford", email = "rueikes.homelab@gmail.com"}
+]
+maintainers = [
+    {name = "Rick Langford", email = "ricks-homelab@gmail.com"}
+]
+license = {text = "GPL-3.0-or-later"}
+keywords = ["Makefile", "build"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Operating System :: POSIX"
+]
+dependencies = [
+"build>=1.2.2",
+"setuptools>=78.1.0",
+"tomli>=2.2.1",
+"wheel>=0.45.1",
+"twine>=6.1.0",
+"stdeb>=0.10.0",
+"check-manifest>=0.50",
+"validate-pyproject>=0.24.1",
+"setuptools_scm>=8.3.1",
+"pytest>=8.3.5",
+"pytest-cov>=6.1.1",
+"tzlocal>=5.3.1"
+]
+
+[project.scripts]
+sync-version = "sync_version:main"
+
+[build-system]
+requires = ["setuptools>=61", "wheel", "tomli", "build"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+homepage = "https://github.com/Ricks-Lab/packaging"
+documentation = "https://github.com/Ricks-Lab/packaging"
+source = "https://github.com/Ricks-Lab/packaging"
+bug-tracker = "https://github.com/Ricks-Lab/packaging/issues"
+
+
